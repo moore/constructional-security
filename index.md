@@ -1,37 +1,43 @@
-## Welcome to GitHub Pages
+# Motivation
 
-You can use the [editor on GitHub](https://github.com/moore/constructional-security/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+The core question to we ask is:
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+>How can we allow engineers to write unreliable code without sacrificing safety?
 
-### Markdown
+Bugs in functional parts of software can usually be worked around once they are encountered, but for safety concerns, a single failure is usually unacceptable.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Goals
 
-```markdown
-Syntax highlighted code block
+### Common Lexicon
 
-# Header 1
-## Header 2
-### Header 3
+Formal methods, object capabilities, APSEC, and other communities often use different terms to talk about ideas related to Constructional Security. If we had more understanding of each others languages we could better understand how each communities ideas can contribute.
 
-- Bulleted
-- List
+### What are the proprieties Constructional Security
 
-1. Numbered
-2. List
+What approaches and practices are required for a some software to be said to have Constructional Security? It is an explicit goal that we define the term to be inclusive to many approaches to "built-in" security, formal methods, ocap, etc. My current thinking (july 4th 2020) is that that:
 
-**Bold** and _Italic_ and `Code` text
+ - It must be possible to reason about the security a system. (but what dose this mean?)
+ - The goal of any control must be explicitly stated.
+ - Each control must be precisely specified.
+ - Each control must have it's dependencies and assumptions explicitly stated.
 
-[Link](url) and ![Image](src)
-```
+ What dose this exclude? What dose it miss? Can it be simpler?
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## Terminology
 
-### Jekyll Themes
+### Controls
+A control is a mechanism which constrains the behavior of a system in order to maintain safety or policy requirements. 
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/moore/constructional-security/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+## Topics
 
-### Support or Contact
+### Features Vs. Bugs
+Each feature one adds to a code base will tend to increase the lines of code deployed; but defects scale linearly with lines of code and it is reasonable to assume the same goes for vulnerabilities. Our current approach to software engineering depends on large amounts of ambient authority leading to the unfortunate outcome that software becomes less secure the more useful it becomes.
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+As a result we believe we must rethink how software is developed to separate code which provides safety from code that is functional.
+
+### Correctness and Weird Machines
+For any safety critical code we should have a explicit goal of showing that only expected states can be reached though intended transitions. This model of thinking is based on the idea of Weird Machines (https://en.wikipedia.org/wiki/Weird_machine), which is a theory of exploitation. Under this theory all programs can be viewed as a state machine and an exploit is data which abuses unintended states and transitions in the state machine to overcome controls implemented in the software.
+
+### Safety Engineering
+In this document I refer to safety instead of security with the idea that security is a kind of safety. What can we learn from the safety engineering community?
+
