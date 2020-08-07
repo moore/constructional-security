@@ -6,14 +6,17 @@ It is time for a new approach to software engineering.
 Technology has crossed a chasm and connectivity is the new norm.  We face new network adversaries who have shown great success at overcoming the barriers we have placed around our software.
 
 Where some well-funded and disciplined defenders have kept attackers at bay; it is at an ever-increasing cost that is already prohibitive for many.
+ 
+Programmers are responding by internalizing security into, instead of sounding, their software. Where protecting is put on par with communicating, creating, and managing. From end to end encryption, to process sandboxing, security is becoming a first-class citizen rather than a after the fact addition.
 
-In response a strategy is taking hold. An approach where security is internalized into, instead of sounding, our software. Where protecting is put on par with communicating, creating, and managing. From end to end encryption, to process sandboxing, security is becoming a first-class citizen rather than a after the fact addition.
+We believe that Constructional Security is the logical conclusion of the process of internalizing security in to software and offers an affordable approach to protecting users and data.
 
-This approach demands the core constraints:
+In order to achieve Constructional Security software must:
 
-1. Security controls must be isolated from business logic.
-2. Security objectives and assumptions must be explicitly stated.
-3. No software module may have access to authority beyond it's purpose.
+1. Isolate security controls from business logic.
+2. State Security objectives and assumptions explicitly stated.
+3. Ensure no software module has access to authority beyond it's needs.
+
 
 ## Motivation
 
