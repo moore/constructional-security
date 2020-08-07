@@ -1,8 +1,22 @@
-# Motivation
 
-The core question to we ask is:
+# Constructional Security
 
->How can we allow engineers to write unreliable code without sacrificing safety?
+It is time for a new approach to software engineering.
+
+Technology has crossed a chasm and connectivity is the new norm.  We face new network adversaries who have shown great success at overcoming the barriers we have placed around our software.
+
+Where some well-funded and disciplined defenders have kept attackers at bay; it is at an ever-increasing cost that is already prohibitive for many.
+
+In response a strategy is taking hold. An approach where security is internalized into, instead of sounding, our software. Where protecting is put on par with communicating, creating, and managing. From end to end encryption, to process sandboxing, security is becoming a first-class citizen rather than a after the fact addition.
+
+This approach demands the core constraints:
+
+1. Security controls must be isolated from business logic.
+2. Security objectives and assumptions must be explicitly stated.
+3. No software module may have access to authority beyond it's purpose.
+
+## Motivation
+
 
 Bugs in functional parts of software can usually be worked around once they are encountered, but for safety concerns, a single failure is usually unacceptable.
 
