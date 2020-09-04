@@ -7,15 +7,15 @@ Technology has crossed a chasm and connectivity is the new norm.  We face new ne
 
 Where some well-funded and disciplined defenders have kept attackers at bay; it is at an ever-increasing cost that is already prohibitive for many.
  
-Programmers are responding by internalizing security into, instead of sounding, their software. Where protecting is put on par with communicating, creating, and managing. From end to end encryption, to process sandboxing, security is becoming a first-class citizen rather than a after the fact addition.
+Programmers are responding by internalizing security into, instead of surrounding, their software. Where protecting is put on par with communicating, creating, and managing. From end to end encryption, to process sandboxing, security is becoming a first-class citizen rather than a after the fact addition.
 
-We believe that Constructional Security is the logical conclusion of the process of internalizing security in to software and offers an affordable approach to protecting users and data.
+Constructional Security is a formalization of the process of internalizing security into software which offers an affordable approach to protecting users and data.
 
 In order to achieve Constructional Security software must:
 
 1. Isolate security controls from business logic.
-2. State Security objectives and assumptions explicitly stated.
-3. Ensure no software module has access to authority beyond it's needs.
+2. Explicitly state security objectives and assumptions.
+3. Ensure no software subsystem has access to authority beyond it' needs.
 
 
 ## Motivation
