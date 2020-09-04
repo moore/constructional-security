@@ -17,6 +17,17 @@ In order to achieve Constructional Security software must:
 2. Explicitly state security objectives and assumptions.
 3. Ensure no software subsystem has access to authority beyond it' needs.
 
+## Security Matrix
+|                   |Credential Theft |Insider Threat |RCE    |Logic Bug|
+|---                |---              |---            |---    |---      |
+|2fa                |YES              |NO             |NO     |NO       |
+|Audit Logs         |Partial          |Partial        |Partial|NO       |
+|Randomization      |NO               |NO             |YES    |NO       |
+|Formal Methods     |NO               |NO             |YES    |YES      |
+|Object Capabilities|NO               |NO             |NO     |YES      |
+|Safe Languages     |NO               |NO             |YES    |NO       |
+|Sandboxing         |NO               |NO             |YES    |NO       |
+|Role Separation    |Partial          |Partial        |NO     |NO       |
 
 ## Motivation
 
