@@ -18,16 +18,17 @@ In order to achieve Constructional Security software must:
 3. Ensure no software subsystem has access to authority beyond it' needs.
 
 ## Security Matrix
-|                   |Credential Theft |Insider Threat |RCE    |Logic Bug|
-|---                |---              |---            |---    |---      |
-|2fa                |YES              |NO             |NO     |NO       |
-|Audit Logs         |Partial          |Partial        |Partial|NO       |
-|Randomization      |NO               |NO             |YES    |NO       |
-|Formal Methods     |NO               |NO             |YES    |YES      |
-|Object Capabilities|NO               |NO             |NO     |YES      |
-|Safe Languages     |NO               |NO             |YES    |NO       |
-|Sandboxing         |NO               |NO             |YES    |NO       |
-|Role Separation    |Partial          |Partial        |NO     |NO       |
+|                   |Credential Theft |Insider Threat |RCE    |Logic Bug|Information Leak|Backdoor|Phishing|Social Engineering|
+|---                |---              |---            |---    |---      |--              |--      |--      |--                |
+|2fa                |YES              |NO             |NO     |NO       |NO              |NO      |YES     |NO?               |
+|Encryption at Rest |NO               |Yes            |NO     |NO       |NO              |NO      |NO      |NO                |
+|Audit Logs         |Partial          |Partial        |Partial|NO       |NO              |NO      |YES     |YES               |
+|Polymorphism       |NO               |NO             |YES    |NO       |YES?            |NO      |NO      |NO                |
+|Formal Methods     |NO               |NO             |YES    |YES      |YES             |YES     |NO      |NO                |
+|Object Capabilities|NO               |NO             |NO     |YES      |YES             |NO      |NO      |NO                |
+|Safe Languages     |NO               |NO             |YES    |NO       |YES             |NO      |NO      |NO                |
+|Sandboxing         |NO               |NO             |YES    |NO       |YES             |YES     |NO      |NO                |
+|Role Separation    |Partial          |Partial        |NO     |NO       |NO              |NO      |YES     |YES               |
 
 ## Motivation
 
