@@ -22,7 +22,7 @@ In order to achieve Constructional Security software must:
 |---                |---              |---            |---    |---      |--              |--      |--      |--                |
 |2fa                |YES              |NO             |NO     |NO       |NO              |NO      |YES     |NO?               |
 |Encryption at Rest |NO               |Yes            |NO     |NO       |NO              |NO      |NO      |NO                |
-|Memory Encryption  |NO               |NO             |NO     |NO       |NO              |NO      |NO      |NO                |
+|Memory Encryption  |NO               |NO             |NO     |NO       |YES             |NO      |NO      |NO                |
 |Audit Logs         |Partial          |Partial        |Partial|NO       |NO              |NO      |YES     |YES               |
 |Polymorphism       |NO               |NO             |YES    |NO       |YES?            |NO      |NO      |NO                |
 |Formal Methods     |NO               |NO             |YES    |YES      |YES             |YES     |NO      |NO                |
