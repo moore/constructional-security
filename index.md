@@ -3,19 +3,21 @@
 
 It is time for a new approach to software engineering.
 
-Technology has crossed a chasm and connectivity is the new norm.  We face new network adversaries who have shown great success at overcoming the barriers we have placed around our software.
+Technology has crossed a chasm and connectivity is the new norm. We now face new network adversaries who have shown great success at overcoming the barriers we have placed around our software.
 
 Where some well-funded and disciplined defenders have kept attackers at bay; it is at an ever-increasing cost that is already prohibitive for many.
  
-Programmers are responding by internalizing security into, instead of surrounding, their software. Where protecting is put on par with communicating, creating, and managing. From end to end encryption, to process sandboxing, security is becoming a first-class citizen rather than a after the fact addition.
+Our practice of software development is failing us, with bugs and exploitation being seen as inevitable, we have resorted to a life of breach and recovery. There is no question of if any system can be compromised but when.
 
-Constructional Security is a formalization of the process of internalizing security into software which offers an affordable approach to protecting users and data.
+This reality, if not abated, will steal away the advancements won though technology, and the better future we might have. Instead we will be under constant attack where each, communication we receive, or document we view, being a possible trap.
 
-In order to achieve Constructional Security software must:
+Constructional Security is a corse correction based on two principles:
 
-1. Isolate security controls from business logic.
-2. Explicitly state security objectives and assumptions.
-3. Ensure no software subsystem has access to authority beyond it' needs.
+1. Software must be safe for it's users and the environment it operates in.
+2. Safety can only be achieved by architecturally choices.
+
+In adherence to these principles we must bring forth ideas, both old and new, which have as yet been adopted as common practice; accepting the environmental shift which demands fundamental changes to how we build software.
+
 
 ## Security Matrix
 |                   |Credential Theft |Insider Threat |RCE    |Logic Bug|Information Leak|Backdoor|Phishing|Social Engineering|
