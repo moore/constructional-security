@@ -18,6 +18,13 @@ Constructional Security is a corse correction based on two principles:
 
 In adherence to these principles we must bring forth ideas, both old and new, which have as yet been adopted as common practice; accepting the environmental shift which demands fundamental changes to how we build software.
 
+## Approaches To Construction
+
+## Time to Market
+
+## Cost of Failure
+
+## Alternative Approaches
 
 ## Security Matrix
 |                   |Credential Theft |Insider Threat |RCE    |Logic Bug|Information Leak|Backdoor|Phishing|Social Engineering|
