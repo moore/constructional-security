@@ -30,6 +30,3 @@ There is some good news. Our end goal doesn't need to be perfection, we just nee
 
 ## The Only Way is Forward
 Even with all of this complexity and risk there is no walking back. As you stated, the benefits of connectivity and automation are lower costs and greater access to goods and services. If any company or organisation were to try to go back to pencil and paper they would be unable to compete for business and attention.
-
-We should expect more complexity, more risk, and more attackers who are more aggressive.
-
